@@ -1,0 +1,8 @@
+config BR2_PACKAGE_SHADOW
+	bool "shadow"	
+	help
+	  The Shadow package contains programs for handling passwords in a secure way.
+
+	  https://shadow-maint.github.io/shadow/
+
+

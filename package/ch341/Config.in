@@ -1,0 +1,10 @@
+config BR2_PACKAGE_CH341
+	bool "ch341"
+	depends on BR2_LINUX_KERNEL
+	help
+	  A standalone driver for the ch341 USB to serial adapter.
+	  This is needed only for Linux kernels before 3.12.
+	  
+
+comment "ch341 needs a Linux kernel to be built"
+	depends on !BR2_LINUX_KERNEL

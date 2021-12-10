@@ -1,0 +1,12 @@
+diff -Naur /ch34x.c /ch34x.c
+--- /ch34x.c	2018-01-11 17:00:56.000000000 -0800
++++ /ch34x.c	2021-12-09 21:36:08.356896310 -0800
+@@ -588,7 +588,7 @@
+ 	unsigned int c_cflag;
+ 	int bps;
+ 	long timeout;
+-	wait_queue_t wait;
++	wait_queue_entry_t wait;
+ 
+ #if(LINUX_VERSION_CODE < KERNEL_VERSION(3, 11, 0))
+ 	dbg_ch34x("%s - port:%d", __func__, port->number);

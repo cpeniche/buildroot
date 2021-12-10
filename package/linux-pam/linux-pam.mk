@@ -48,6 +48,14 @@ define LINUX_PAM_INSTALL_CONFIG
 		$(TARGET_DIR)/etc/pam.d/login
 	$(INSTALL) -m 0644 -D package/linux-pam/other.pam \
 		$(TARGET_DIR)/etc/pam.d/other
+	$(INSTALL) -m 0644 -D package/linux-pam/system-account.pam \
+		$(TARGET_DIR)/etc/pam.d/system-account
+	$(INSTALL) -m 0644 -D package/linux-pam/system-password.pam \
+		$(TARGET_DIR)/etc/pam.d/system-password
+	$(INSTALL) -m 0644 -D package/linux-pam/system-auth.pam \
+		$(TARGET_DIR)/etc/pam.d/system-auth
+	$(INSTALL) -m 0644 -D package/linux-pam/system-session.pam \
+		$(TARGET_DIR)/etc/pam.d/system-session
 	$(LINUX_PAM_SELINUX_PAMFILE_TWEAK)
 endef
 
